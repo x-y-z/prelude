@@ -79,7 +79,7 @@ can skip the whole manual and just type in your favorite shell the
 following command:
 
 ```bash
-curl -L https://git.io/epre | sh
+curl -L https://git.io/fhs0Q | sh
 ```
 
 You can now power up your Emacs, sit back and enjoy Prelude,
@@ -90,13 +90,13 @@ source repository and the installation directory. To change the
 installation directory:
 
 ```bash
-export PRELUDE_INSTALL_DIR="$HOME/.emacs.d" && curl -L https://github.com/bbatsov/prelude/raw/master/utils/installer.sh | sh
+export PRELUDE_INSTALL_DIR="$HOME/.emacs.d" && curl -L https://github.com/x-y-z/prelude/raw/master/utils/installer.sh | sh
 ```
 
 To change the source repository:
 
 ```bash
-export PRELUDE_URL="https://github.com/yourname/prelude.git" && curl -L https://github.com/bbatsov/prelude/raw/master/utils/installer.sh | sh
+export PRELUDE_URL="https://github.com/yourname/prelude.git" && curl -L https://github.com/x-y-z/prelude/raw/master/utils/installer.sh | sh
 ```
 
 Note that the installer will back up any existing `.emacs` file or
@@ -127,7 +127,7 @@ You can install **Emacs Prelude** via the command line with either `curl` or
 If you're using `curl` type the following command:
 
 ```bash
-curl -L https://github.com/bbatsov/prelude/raw/master/utils/installer.sh | sh
+curl -L https://github.com/x-y-z/prelude/raw/master/utils/installer.sh | sh
 ```
 
 #### Via Wget
@@ -135,7 +135,7 @@ curl -L https://github.com/bbatsov/prelude/raw/master/utils/installer.sh | sh
 If you're using `wget` type:
 
 ```bash
-wget --no-check-certificate https://github.com/bbatsov/prelude/raw/master/utils/installer.sh -O - | sh
+wget --no-check-certificate https://github.com/x-y-z/prelude/raw/master/utils/installer.sh -O - | sh
 ```
 
 ### Manual
@@ -143,7 +143,7 @@ wget --no-check-certificate https://github.com/bbatsov/prelude/raw/master/utils/
 Make sure you do not have any `~/.emacs` file present.
 
 ```bash
-git clone git://github.com/bbatsov/prelude.git path/to/local/repo
+git clone git://github.com/x-y-z/prelude.git path/to/local/repo
 ln -s path/to/local/repo ~/.emacs.d
 cd ~/.emacs.d
 ```
