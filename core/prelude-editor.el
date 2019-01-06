@@ -42,8 +42,8 @@
 ;; indentation width -- eg. c-basic-offset: use that to adjust your
 ;; personal indentation width, while maintaining the style (and
 ;; meaning) of any files you load.
-(setq-default indent-tabs-mode nil)   ;; don't use tabs to indent
-(setq-default tab-width 8)            ;; but maintain correct appearance
+(setq-default indent-tabs-mode t)   ;; don't use tabs to indent
+(setq-default tab-width 4)            ;; but maintain correct appearance
 
 ;; Newline at end of file
 (setq require-final-newline t)
@@ -325,7 +325,8 @@ indent yanked text (with prefix arg don't indent)."
 ;; whitespace-mode config
 (require 'whitespace)
 (setq whitespace-line-column 80) ;; limit line length
-(setq whitespace-style '(face tabs empty trailing lines-tail))
+(setq whitespace-style (quote (spaces tabs newline space-mark tab-mark newline-mark )))
+;(setq whitespace-style '(face tabs empty trailing lines-tail))
 
 ;; saner regex syntax
 (require 're-builder)
